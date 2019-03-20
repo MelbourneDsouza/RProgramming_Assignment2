@@ -34,3 +34,9 @@ cacheSolve <- function(x, ...) {
   x$setInverse(inv)
   inv
 }
+## Testing my function
+melmatrix<-makeCacheMatrix(matrix(2:5,2,2))
+melmatrix$get()
+melmatrix$getInverse()
+cacheSolve(melmatrix)
+melmatrix$getInverse()
